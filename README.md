@@ -4,6 +4,11 @@
 Solutions are in Python3.8 and Haskell
 
 
+## Running the Python solution:
+In home directory
+- ``export PYTHONPATH=`pwd` ``
+- `pip install -r requirements.txt` 
 
-
+In the solution direcory
+- `python solution.py`
 
