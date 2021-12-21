@@ -9,6 +9,10 @@ In home directory
 - ``export PYTHONPATH=`pwd` ``
 - `pip install -r requirements.txt` 
 
-In the solution direcory
+In the solution directory
 - `python solution.py`
 
+## Running Haskell solution
+In the solution directory
+- ` ghc -o solution solution.hs`
+- `./solution`

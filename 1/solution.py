@@ -1,13 +1,16 @@
 from utils.parse_input import parse_input
 
 
-def check_condition(num, prev_num):
-    if int(num) > int(prev_num):
-        return True
-    return False
+def calculate(input):
+    valid = [n for i, n in enumerate(input[1:]) if n > input[i]]
+    return valid
 
 
 if __name__ == '__main__':
     input = parse_input()
-    valid = [n for i, n in enumerate(input[1:]) if check_condition(n, input[i])]
-    print(len(valid))
+    input = [int(n) for n in input]
+    result = len(calculate(input))
+    print("Part 1 result", result)
+    input2 = [n + input[i] + input[i + 1] for i, n in enumerate(input[2:])]
+    result = len(calculate(input2))
+    print("Part 2 result", result)
